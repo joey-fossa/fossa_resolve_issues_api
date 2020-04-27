@@ -1,6 +1,8 @@
 #!/usr/local/bin/bash
 # ------------------------------------------
-
+#######Usage info
+#######You will need to update the FOSSA domain in line 11
+#######You will also need to add your token in line 30
 clear
 
 
@@ -25,7 +27,7 @@ do
        --data-urlencode $project_id_agg \
        -d resolved=true \
        -d notes="$closed_note" \
-       --header 'Authorization: token d34cc38aec0accab6b43fc54bf306f5f'
+       --header 'Authorization: token xxxxxxx'
 
 done < $INPUT
 
